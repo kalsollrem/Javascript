@@ -1,0 +1,46 @@
+body
+{
+    background-color: skyblue;
+}
+
+div#clock
+{
+    height: 100vh;
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+}
+div#inside
+{
+    width: 70%;
+    height: 50%;
+    background-color:rgb(151, 243, 243);
+    border-radius: 50px;
+}
+div#text
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size : 100px;
+    color:azure;
+}
+
+/* 버튼과 시간 표기 */
+div#main
+{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    width: 50%;
+    height: 15%;
+    font-size: 50px;
+    color:azure;
+}
+
+/* 버튼 사이즈 */
+#timeWhat
+{
+    font-size: 50px;
+}
