@@ -1,0 +1,49 @@
+.btn_wrap
+{
+    width: 400px;
+    height: 100px;
+    border: 3px solid navy;
+    margin:  100px auto;
+    box-sizing: border-box;                         /*테두리를 안쪽으로 넣는다.*/
+    position: relative;                             /*relative를 통해 자식요소의 참조값을 btn_wrap의 왼쪽 상단으로 맞춤.*/
+}
+
+.gage
+{
+    width: 0%;
+    height: 100%;
+    background-color: navy;
+    position: absolute;                             /*absolute 통해 좌표를 btn_wrap의 왼쪽 상단겹친다.*/
+    transition-duration: 0.5s;                      /*애니메이션이 서서하게 변경되도록 가속도 설정.*/
+    /*transition-timing-function: ease-in-out; */   /*ease-in-out를 이용해서 브라우저의 검사기능의 아이콘을 눌러, 임의의 가속도를 조정하고, cubic-bezier값을 가져와 설정할 수 있다.*/
+    transition-timing-function: cubic-bezier(0, 0, 0.19, 1);
+}
+
+.btn_wrap h3
+{
+    /* 폰트를 중앙 정렬하기 위한 css */
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+    /* 폰트를 중앙 정렬하기 위한 css */
+
+    position: relative;
+    text-align: center;
+    font-size: 26px;
+}
+
+.btn_wrap:hover .gage
+{
+    width: 100%;
+    
+}
+
+.btn_wrap:h3
+{
+    transition-duration: 0.5s;
+}
+
+.btn_wrap:hover h3
+{
+    color: white;
+}
