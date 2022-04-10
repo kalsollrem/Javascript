@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+</head>
+<script>
+	var ename = "체인";
+	var holt = "바퀴";
+	
+	function mata(name, holt)
+	{
+		this.partName = name;
+		this.PartHolt = holt;
+	}
+	
+	mata.prototype.ende = function()
+	{
+		var str = ""
+		str += "chain은 " + this.partName + "이고, ";
+		str += "wheel은 " + this.PartHolt + "이다, ";
+		return str;
+	}
+	
+	var holy = new mata("체인", "바퀴");
+
+	document.write(mata.ende());
+
+</script>
+
+<body>
+    
+</body>
+</html>
