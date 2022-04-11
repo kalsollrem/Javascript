@@ -5,7 +5,7 @@ import './App.css';
 //전통적인 document.getElementById()등을 통한 데이터 바인딩이 필요가 없어 변수지정이 매우 간단함.
 //{ 변수명 }을 통해 간단하게 렌더링 가능.
 //주석은 {/* */}의 형태로 사용가능
-
+ 
 let dateBind = "데이터 바인딩 예시";
 let stylepartA = {color:"green" , fontSize : '20px'};       //style을 셋팅한 함수.
 
