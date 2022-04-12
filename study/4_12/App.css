@@ -18,6 +18,12 @@ body{
   font-size: 20px;
 }
 
+.modal{
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #eee;
+}
+
 .list{
   margin-top: 30px;
   text-align: left;
