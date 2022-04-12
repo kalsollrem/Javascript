@@ -7,7 +7,7 @@ import './App.css';
 //주석은 {/* */}의 형태로 사용가능
  
 let dateBind = "데이터 바인딩 예시";
-let stylepartA = {color:"green" , fontSize : '20px'};       //style을 셋팅한 함수.
+let stylepartA = {color:"yellow" , fontSize : '40px'};       //style을 셋팅한 함수.
 
 function App() 
 {
@@ -19,11 +19,10 @@ function App()
   return (
     <div className="App">
       <div className='black-nav'>
-        <div style={{color:'yellow' , fontSize : '40px'}}>개발 블로그</div>   {/*style의 경우 object자료형으로 만든 스타일 style={ {변경요소 : '값' } }을 사용해야하며, font-size같이 -가 들어가는 경우, -가 사용 불가능 하기때문에 -뒤의 첫글자를 대문자로 바꿔 사용한다.  */}
+        <div style={stylepartA}>개발 블로그</div>   
       </div>
-      <img src={ logo }></img>                                                {/*import한 파일의 이름을 지정해 가져온다*/}
-      <h4>{MunJa()}</h4>                                                      {/* 함수 사용법 */}
-      <h4 style={stylepartA}>{dateBind}</h4>                                  {/* 함수 주입 */}
+      <h4>{MunJa()}</h4>
+
     </div>
   );
 }
