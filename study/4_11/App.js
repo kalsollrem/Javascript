@@ -8,7 +8,7 @@ import './App.css';
  
 let dateBind = "데이터 바인딩 예시";
 let stylepartA = {color:"yellow" , fontSize : '40px'};       //style을 셋팅한 함수.
-
+ 
 function App() 
 {
   function MunJa()
