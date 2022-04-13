@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import RetDom from './App';
+import RetDom from './RetDom';        //외부 임포트
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <RetDom/>
   </React.StrictMode>,
   document.getElementById('root')
 );
