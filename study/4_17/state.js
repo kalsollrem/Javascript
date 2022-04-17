@@ -41,7 +41,7 @@ function Nav(props)
       <li key={t.id}>
         <a id={t.id} href={'/read/' + t.id} onClick={event=>{
             event.preventDefault();
-            props.onChangeMode(Number(event.target.id));
+            props.onChangeMode(Number(event.target.id));  //event.target.id은 문자열로 받기때문에 Number로 정수로 변환해줄 필요가 있다.
           }}>
           {t.title}
         </a>
