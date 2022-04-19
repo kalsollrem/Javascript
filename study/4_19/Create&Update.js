@@ -165,7 +165,7 @@ function App()
         title = topiecs[i].title;
         body  = topiecs[i].body;
       }
-    }
+    } 
 
     content = <Update title={title} body={body} onUpdate={(title,body)=>{
       const newTopics = [...topiecs]
