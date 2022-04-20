@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바닐라 웹</title>
+</head>
+
+<script>
+    window.onload = function()
+    {
+        const title = document.querySelector(".hello h1");
+        title.innerText = "heool";
+
+        function handUp()
+        {
+            alert('마우스가 클릭됐음');
+        }
+
+        function handDown()
+        {
+            alert('마우스가 올라갔음');
+        }
+
+        function colorCH()
+        {
+            document.body.style.backgroundColor = "blue";
+        }
+
+        title.addEventListener("click", handUp);
+        title.addEventListener("mouseover",handDown);
+        window.addEventListener("resize",colorCH);
+    }
+
+</script>
+
+<body>
+    <div class="hello">
+        <h1>Grab me</h1>
+    </div>
+    
+</body>
+</html>
