@@ -19,6 +19,7 @@ window.onload=function()
         */
 
 
+        
         //toggle를 활용한 Class 이름 바꾸기
         //tiggle은 classList에서 clicked가 존재하는지 확인하고, 없으면 생성, 있음 제거해준다.
         h1.classList.toggle("clicked");             
