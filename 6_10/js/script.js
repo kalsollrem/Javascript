@@ -27,12 +27,12 @@ $(function()
 
 
     //모달
-    $(".notice ul li").first().click(function()
+    $(".notice ul li").click(function()
     {
         $(".modal").fadeIn();
     });
 
-    $(".modal_inner button").first().click(function()
+    $(".modal_inner button").click(function()
     {
         $(".modal").hide();
     });
