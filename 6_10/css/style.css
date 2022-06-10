@@ -1,11 +1,14 @@
 @charset "utf-8";
 
+/*베이스*/
 *       { margin: 0px; padding: 0px; }
 ul      { list-style: none; }
 a       { color : inherit;  text-decoration: none; }
 img     { vertical-align: top; border: 0px; }
 body    { color : #333; }
 .wrap   { width: 1000px; height: 650px; margin: auto;}
+/*베이스*/
+
 
 /*모달용*/
 .modal  
@@ -38,6 +41,9 @@ body    { color : #333; }
     clear :both
 }
 
+
+/*헤더*/
+
 header
 {
     width: 200px;   height: 650px;
@@ -57,32 +63,16 @@ header nav ul.gnb>li>ul.sub>li  { width: 100%; height: 36px; line-height: 36px; 
 header nav ul.gnb>li>ul.sub>li>a{ display: block;}
 header nav ul.gnb>li:hover>a    {background-color: pink;}
 header nav ul.gnb>li>ul.sub>li:hover{background-color: blue;}
+/*헤더*/
 
 
-.contents
-{
-    width: 800px;
-    height: 650px;
-    float: left;
-}
 
-.contents .main_visual
-{
-    width: 100%;
-    height: 350px;
-    background-color: aquamarine;
-    position: relative;
-    overflow: hidden;
-}
+.contents                   { width: 800px; height: 650px; float: left;}
+.contents .main_visual      { width: 100%;  height: 350px; background-color: aquamarine;  position: relative; overflow: hidden; }
+.contents .main_visual ul   { position: absolute; left: 0; top: 0; width: 300%;}
+.contents .main_visual ul li{ float: left;}
 
-.contents .main_visual ul{ position: absolute; left: 0; top: 0; width: 300%;}
-.contents .main_visual ul li{float: left;}
-
-.contents .con
-{
-    width: 100%;  height: 200px;
-}
-
+.contents .con              {  width: 100%;  height: 200px;}
 .contents .con h2
 { 
     text-align: center; 
@@ -90,7 +80,6 @@ header nav ul.gnb>li>ul.sub>li:hover{background-color: blue;}
     background-color: aliceblue; color: aquamarine; 
     border-radius: 10px 10px 0px 0px;
 }
-
 .contents .con ul           { width: 100%; }
 .contents .con ul li        { width: 100%; height: 42px; line-height: 42px; }
 .contents .con ul li:hover  { background-color: blueviolet; }

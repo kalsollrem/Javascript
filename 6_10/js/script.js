@@ -1,15 +1,20 @@
 $(function()
 {
-    $("ul.gnb>li").hover(function(){
+    //내비가이드
+    $("ul.gnb>li").hover(function()
+    {
         $(this).find("ul.sub").stop().slideDown();
-    },function(){
+    },
+    function()
+    {
         $(this).find("ul.sub").stop().slideUp();
-    })                                              //내비가이드
+    })                                              
 
+    //슬라이드
     var slideIndex=0;
     setInterval(function()
     {
-        if(slideIndex<2)
+        if(slideIndex<2) 
         {
             slideIndex++
         }
@@ -19,6 +24,7 @@ $(function()
         }
         $(".main_visual ul").animate({left:(slideIndex*-800)},500)
     },3000);
+
 
     //모달
     $(".notice ul li").first().click(function()
