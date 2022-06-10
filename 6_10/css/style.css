@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+*       { margin: 0px; padding: 0px; }
+ul      { list-style: none; }
+a       { color : inherit;  text-decoration: none; }
+img     { vertical-align: top; border: 0px; }
+body    { color : #333; }
+.wrap   { width: 1000px; height: 650px; margin: auto;}
+
+/*모달용*/
+.modal  
+{
+    position: fixed; 
+    width: 100%; height: 100%; 
+    background:rgba(0,0,0,0.2); 
+    z-index: 100;
+    display: none;
+}
+
+.modal .modal_inner
+{
+    width: 700px; height: 500px; 
+    background-color: azure; 
+    text-align: center; 
+    position: absolute; 
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal .modal_inner h2{padding: 20px 0;}
+.modal .modal_inner button{width: 30px; height: 30px; cursor: pointer; position: absolute; right: 10px; top: 10px;}
+
+/*모달용*/
+
+.clearfix::after
+{
+    display: block;
+    clear :both
+}
+
+header
+{
+    width: 200px;   height: 650px;
+    background-color: aqua;
+    float: left;
+    position: relative; 
+    z-index: 10;
+}
+header h1 { padding: 10px 20px; }
+
+header nav ul.gnb               { width: 180px; margin: 0px auto; text-align: center;}
+header nav ul.gnb               { width: 100%;}
+header nav ul.gnb>li            { width: 100%; position: relative;}
+header nav ul.gnb>li> a         { display: block; width: 180px; margin: 0px 10px; height: 40px; line-height:40px; background-color: antiquewhite;}
+header nav ul.gnb>li>ul.sub     { position: absolute; display: none; left: 190px; top: 0; width: 100%;}
+header nav ul.gnb>li>ul.sub>li  { width: 100%; height: 36px; line-height: 36px; background-color: aliceblue;}
+header nav ul.gnb>li>ul.sub>li>a{ display: block;}
+header nav ul.gnb>li:hover>a    {background-color: pink;}
+header nav ul.gnb>li>ul.sub>li:hover{background-color: blue;}
+
+
+.contents
+{
+    width: 800px;
+    height: 650px;
+    float: left;
+}
+
+.contents .main_visual
+{
+    width: 100%;
+    height: 350px;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+
+.contents .main_visual ul{ position: absolute; left: 0; top: 0; width: 300%;}
+.contents .main_visual ul li{float: left;}
+
+.contents .con
+{
+    width: 100%;  height: 200px;
+}
+
+.contents .con h2
+{ 
+    text-align: center; 
+    width:100px; height: 30px; line-height: 30px; 
+    background-color: aliceblue; color: aquamarine; 
+    border-radius: 10px 10px 0px 0px;
+}
+
+.contents .con ul           { width: 100%; }
+.contents .con ul li        { width: 100%; height: 42px; line-height: 42px; }
+.contents .con ul li:hover  { background-color: blueviolet; }
+.contents .con ul li a      { width: 100%; display: block; height: 100%; }
+.contents .con ul li a span { float: right; font-size: 15px; }
+
+.contents .con .notice      { width: 300px; height: 200px;  float:left;}
+
+.contents .con .gal         { width: 250px; height: 200px; float:left;}
+.contents .con .gal ul      { width: 100%; margin-top: 10px;}
+.contents .con .gal ul li   { width: 75px; height: 75px; margin-left: 6px; float: left;}
+
+.contents .con .baro        { width: 250px; height: 200px; float:left;}
+.contents .con .baro ul     { width: 100%; margin-top: 10px;}
+.contents .con .baro ul li  { width: 100px; margin-left: 15px; float: left;}
+
+.contents footer
+{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
