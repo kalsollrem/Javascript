@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*기본셋팅*/
+*       { margin: 0px; padding: 0px;} 
+ul      { list-style: none;}
+a       { text-decoration: none;}
+img     { vertical-align: top; border:0px}
+body    { color:#333}
+/*기본셋팅*/
+
+.modal  {position: absolute; z-index: 100; background-color:rgba(0, 0, 0, 0.3); width: 100%; height: 100%; display: none;}
+.modal .alrim { width: 400px; height: 500px; background-color: wheat; text-align: center;}
+.modal .alrim { left:50%; top:50%; transform: translate(-50%,-50%); position: absolute;}
+.modal .alrim>button {width: 30px; height: 30px; position: absolute; right: 10px; top: 10px;}
+
+
+
+
+/*프레임*/
+.wrap           { width: 1000px; height: 650px; margin: auto;}
+.headZone       { width: 200px;  height: 650px; background-color: pink; position: relative; float: left;}
+.headZone .logo {width: 200px; height: 120px; background-color: aqua;}
+
+header nav .menu { width: 200px; text-align: center;}
+header nav .menu>li { background-color: blanchedalmond; position: relative; width: 100%;}
+header nav .menu>li>a{ display: block;}
+header nav .menu>li>ul.sub {position:absolute; display: none; z-index: 30;}
+header nav .menu>li>ul.sub  {width: 100%; left: 190px; top: 0;}
+header nav .menu>li>ul.sub>li {background-color: azure;}
+header nav .menu>li>ul.sub>li>a {display: block;}
+
+header nav .menu>li:hover {background-color: blueviolet;}
+header nav .menu>li>ul.sub>li>a:hover {background-color:brown;}
+
+.contents            {width: 800px; height: 650px; float: left;}
+.contents .banner    {width: 100%;  height: 300px; background-color: aquamarine; overflow: hidden; position: relative;}
+.contents .banner>ul {width: 300%; position: absolute;}
+.contents .banner>ul>li {float: left;}
+
+.contents .ones      {width: 300px; height: 200px; background-color: gray; float: left;}
+.contents .tows      {width: 200px; height: 200px; background-color: green; float: left;}
+.contents .threes    {width: 300px; height: 200px; background-color: gray; float: left;}
+
+footer  {float : left;}
+footer .gei { width: 800px; height: 150px; background-color: gold; display: block; }

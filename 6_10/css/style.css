@@ -35,7 +35,7 @@ body    { color : #333; }
 
 /*모달용*/
 
-.clearfix::after
+.clearfix:after
 {
     display: block;
     clear :both
