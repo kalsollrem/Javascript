@@ -13,17 +13,17 @@ header .headerWrap         { width: 1200px; height: 100px; margin: auto; justify
 header .headerWrap .logo   { width: 200px;  height: 100px; float: left; background-color: aqua;}
 header .headerWrap .menu   { width: 1000px; height: 100px; float: left; background-color: gray;}
 
-.mainMenu       {width: 500px; float: right; background-color: antiquewhite;}
-.mainMenu> li   {width: 125px; height: 100px; float: left; text-align: center;}
+.mainMenu           {width: 500px; float: right; background-color: antiquewhite;}
+.mainMenu> li       {width: 125px; height: 100px; float: left; text-align: center;}
 .mainMenu> li > a   {font-size: 20px; line-height: 100px; }
 
-.contents            { width: 1200px; height: 500px; margin: auto; }
-.contents .slider    { width: 100%; height: 300px; background-color: bisque; overflow: hidden;}
-.contents .slider .images { height: 100%; width: 300%; position: relative;}
-.contents .slider .images>li   {float: left;}
+.contents                      { width: 1200px; height: 500px; margin: auto; }
+.contents .slider              { width: 100%; height: 300px; background-color: bisque; overflow: hidden;}
+.contents .slider .images      { height: 100%; width: 300%; position: relative;}
+.contents .slider .images>li   { float: left;}
 
-.articles        { position: relative;}
-.articles .one   { width: 400px;  height: 200px; float:left; background-color: aqua;}
+.articles            { position: relative;}
+.articles .one       { width: 400px;  height: 200px; float:left; background-color: aqua;}
 .articles .one .gon  { width: 100%;  height: 100%; background-color: green;}
 .articles .one .pic  { width: 100%;  height: 100%; background-color: pink; display: none;}
 
@@ -31,9 +31,9 @@ header .headerWrap .menu   { width: 1000px; height: 100px; float: left; backgrou
 .articles .two   { width: 400px;  height: 200px; float:left; background-color: rebeccapurple;}
 .articles .three { width: 400px;  height: 200px; float:left; background-color: aqua;}
 
-footer             { width: 100%; height: 100px; background: gray; justify-content: space-between}
-footer .footerWrap { margin: auto; width: 1200px; }
-footer .footerWrap .log2    {width: 200px; height: 100px; float: left; background-color: blue;}
-footer .footerWrap .holder  {width: 1000px; height: 100px; float: left; background-color: gold;}
+footer                      { width: 100%; height: 100px; background: gray; justify-content: space-between}
+footer .footerWrap          { margin: auto; width: 1200px; }
+footer .footerWrap .log2    { width: 200px; height: 100px; float: left; background-color: blue;}
+footer .footerWrap .holder  { width: 1000px; height: 100px; float: left; background-color: gold;}
 footer .footerWrap .holder .links   { width:100%; height: 50px; background: beige;}
 
